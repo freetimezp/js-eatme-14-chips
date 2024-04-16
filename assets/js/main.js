@@ -35,3 +35,15 @@ const shadowHeader = () => {
 };
 
 window.addEventListener('scroll', shadowHeader);
+
+
+//slider
+const swiperFavorites = new Swiper('.favorites__swiper', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto'
+});
+
+
+

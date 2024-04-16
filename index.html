@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Project | Chips</title>
 </head>
@@ -82,9 +83,47 @@
             </div>
         </section>
 
+        <section class="favorites section" id="favorites">
+            <div class="favorites__container container grid">
+                <div class="favorites__data">
+                    <h2 class="section__title">
+                        DISCOVER YOUR <br> FAVORITE FLAVORS
+                    </h2>
 
+                    <p class="favorites__description">
+                        Try some exotic flavors or delicious toppings. We have
+                        collected some delicious snack recipes from around the
+                        world for you.
+                    </p>
+
+                    <img src="./assets/images/cheese.png" alt="cheese" class="favorites__cheese-1">
+                    <img src="./assets/images/cheese.png" alt="cheese" class="favorites__cheese-2">
+                </div>
+
+                <div class="favorites__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="favorites__article swiper-slide">
+                            <img src="./assets/images/favorite-chips-1.png" alt="chips" class="favorites__img">
+                            <img src="./assets/images/leaf-1.png" alt="leaf" class="favorites__leaf-1">
+                            <img src="./assets/images/leaf-2.png" alt="leaf" class="favorites__leaf-2">
+                        </article>
+                        <article class="favorites__article swiper-slide">
+                            <img src="./assets/images/favorite-chips-2.png" alt="chips" class="favorites__img">
+                            <img src="./assets/images/leaf-1.png" alt="leaf" class="favorites__leaf-1">
+                            <img src="./assets/images/leaf-2.png" alt="leaf" class="favorites__leaf-2">
+                        </article>
+                        <article class="favorites__article swiper-slide">
+                            <img src="./assets/images/favorite-chips-3.png" alt="chips" class="favorites__img">
+                            <img src="./assets/images/leaf-1.png" alt="leaf" class="favorites__leaf-1">
+                            <img src="./assets/images/leaf-2.png" alt="leaf" class="favorites__leaf-2">
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
