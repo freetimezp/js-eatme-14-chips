@@ -46,4 +46,33 @@ const swiperFavorites = new Swiper('.favorites__swiper', {
 });
 
 
+//scrollup 
+const scrollup = () => {
+    const scrollUp = document.getElementById('scroll-up');
+    this.scrollY >= 250 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
+}
 
+window.addEventListener('scroll', scrollup);
+
+
+//active link
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+    const scrollDown = window.scrollY;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute('id');
+        const sectionClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+
+        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+            sectionClass.classList.add('active-link');
+        } else {
+            sectionClass.classList.remove('active-link');
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActive);
